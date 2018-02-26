@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:circle="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--<com.mobiledev.dashboardnavigation.PieCharView-->
+            <!--android:id="@+id/pv"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="200dp" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:textSize="25sp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+        <!--<com.mobiledev.dashboardnavigation.CircleMenuLayout-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="250dp"-->
+            <!--android:background="@drawable/bg"-->
+            <!--app:firstPosition="bottom"-->
+            <!--app:fly="true"-->
+            <!--android:id="@+id/pv"-->
+            <!--app:itemRotate="false"-->
+            <!--app:speed="30">-->
+
+            <!--<com.mobiledev.dashboardnavigation.MenuItem-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/icon_facebook" />-->
+
+            <!--<com.mobiledev.dashboardnavigation.MenuItem-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/icon_facebook" />-->
+
+            <!--<com.mobiledev.dashboardnavigation.MenuItem-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/icon_facebook" />-->
+
+            <!--<com.mobiledev.dashboardnavigation.MenuItem-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/icon_facebook" />-->
+
+            <!--<com.mobiledev.dashboardnavigation.MenuItem-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/icon_facebook" />-->
+
+            <!--<com.mobiledev.dashboardnavigation.MenuItem-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/icon_facebook" />-->
+
+            <!--<com.mobiledev.dashboardnavigation.MenuItem-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/icon_facebook" />-->
+
+            <!--<com.mobiledev.dashboardnavigation.MenuItem-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/icon_facebook" />-->
+        <!--</com.mobiledev.dashboardnavigation.CircleMenuLayout>-->
+
+        <com.mobiledev.dashboardnavigation.CircleLayout
+            android:id="@+id/main_circle_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/main_selected_textView"
+            android:layout_gravity="center_horizontal"
+            circle:firstChildPosition="South"
+            circle:rotateToCenter="true"
+            circle:isRotating="true" >
+            <!--         circle:circleBackground="@drawable/green"  > -->
+
+
+            <com.mobiledev.dashboardnavigation.CircleImageView
+                android:id="@+id/main_facebook_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_facebook"
+                circle:name="facebook" />
+
+            <com.mobiledev.dashboardnavigation.CircleImageView
+                android:id="@+id/main_myspace_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_facebook"
+                circle:name="myspace" />
+
+            <com.mobiledev.dashboardnavigation.CircleImageView
+                android:id="@+id/main_google_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_facebook"
+                circle:name="google" />
+
+            <com.mobiledev.dashboardnavigation.CircleImageView
+                android:id="@+id/main_linkedin_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_facebook"
+                circle:name="linked" />
+
+            <com.mobiledev.dashboardnavigation.CircleImageView
+                android:id="@+id/main_twitter_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_facebook"
+                circle:name="twitter" />
+
+            <com.mobiledev.dashboardnavigation.CircleImageView
+                android:id="@+id/main_wordpress_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_facebook"
+                circle:name="word" />
+        </com.mobiledev.dashboardnavigation.CircleLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>
